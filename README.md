@@ -1,3 +1,5 @@
-# template-mpa
+L'effet
 
-HTML, SCSS, JS, GULP
+Layout training
+
+Check out here: https://unleashed97.github.io/l-effet/dist/
