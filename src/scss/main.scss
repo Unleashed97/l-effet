@@ -21,9 +21,21 @@ a{
     text-decoration: none;
 }
 
+.btn{
+    border: 2px solid #000;
+    border-radius: 20px;
+    background: none;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'RoadRadio';
+    font-size: 12px;
+}
+
 
 // Components
 @import 'components/container';
 @import 'components/header';
 @import 'components/nav';
+@import 'components/section';
 @import 'components/footer';

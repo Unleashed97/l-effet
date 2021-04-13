@@ -1,0 +1,77 @@
+.section{
+    &--intro{
+        .section__inner{
+            height: 700px;
+            display: flex;
+            flex-flow: column wrap;
+            flex: 1;
+            
+
+        }
+
+        .section__image-block{
+            background: url('../../images/intro/image.png');
+            background-color: #4383D3;
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+            min-height: 100%;
+            position: relative;
+        }
+
+
+        .section__title{
+            margin-bottom: 110px;
+            position: relative;
+
+            &::after{
+                display: block;
+                content: '';
+                position: absolute;
+                bottom: -70%;
+                left: 30%;
+                z-index: 2;
+                width: 120px;
+                background: url('../../images/intro/logo-round.png');
+            }
+        }
+
+        .slider{
+            width: 40%;
+            background-color: blue;
+            img{
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__image-block{
+        display: flex;
+        min-width: 60%;
+        background-size: cover;
+        
+    }
+
+    &__text-block{
+        width: 40%;
+        padding: 40px;
+
+    }
+
+    &__title{
+        font-family: 'Athletics';
+        font-size: 35px;
+
+        mark.text--blue{
+            color: $blue;
+            background: none;
+        }
+    }
+}
