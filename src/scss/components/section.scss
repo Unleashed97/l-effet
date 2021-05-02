@@ -5,8 +5,6 @@
             display: flex;
             flex-flow: column wrap;
             flex: 1;
-            
-
         }
 
         .section__image-block{
@@ -47,6 +45,17 @@
         }
     }
 
+    &--reviews{
+        .section__inner{
+            height: 500px;
+        }
+        .section__image-block{
+            background: url('../../images/reviews/bg.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
     &__inner{
         display: flex;
         flex-wrap: wrap;
@@ -56,22 +65,31 @@
         display: flex;
         min-width: 60%;
         background-size: cover;
-        
+        position: relative;
     }
 
     &__text-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 40%;
-        padding: 40px;
+        padding: 45px;
 
     }
 
     &__title{
         font-family: 'Athletics';
         font-size: 35px;
+        margin-bottom: 15px;
 
         mark.text--blue{
             color: $blue;
             background: none;
         }
+    }
+
+    &__text{
+        font-size: 14px;
+        margin-bottom: 11px;
     }
 }
