@@ -4,13 +4,14 @@ block title
     Leffet
 
 block content
+    //- intro
     section.section.section--intro
         .container
             .section__inner
                 .section__image-block
                     include ../partials/header.pug
                 .section__text-block
-                    h1.section__header Une économie <mark>durable</mark> qui redonne localement. C’est ça
+                    h1.section__title Une économie <mark>durable</mark> qui redonne localement. C’est ça
                     button.btn En savoir plus
                     img.logo__icon--round(src="/images/intro/logo-round.png", alt="Logo")
                 .section__slider.slider
@@ -26,3 +27,30 @@ block content
                             <i class="far fa-chevron-left"></i>
                         button.slider__button.slider__button--next 
                             <i class="far fa-chevron-right"></i>
+
+    //- reviews
+    section.section.section--reviews-promo
+        .container
+            .section__inner
+                .section__text-block 
+                    h1.section__title Un répertoire de témoignages d’<mark>acteurs importants</mark>
+                    p.section__text Vous êtes une coopérative et vous désirez promouvoir l’Effet Coop? Téléchargez les outils ci-dessous, incluant des pastilles, des publicités pour les réseaux sociaux et bien plus!
+                    button.btn voir les témoignages
+                .section__image-block 
+                    img(src="/images/reviews/bg.jpg", alt="Reviews promo")
+
+    //- feedback
+    section.section.section--feedback
+        .container 
+            .section__inner 
+                .section__image-block 
+                    img(src="/images/feedback/feedback.png", alt="Feedback")
+                .section__text-block 
+                    h1.section__title Partagez votre expérience à saveur coopérative
+                    p.section__text Vous avez une initiative qui contribue aux valeurs coopératives? Partagez-là avec nous en nous envoyant les informations par courriel.
+                    .section__button-wrapper
+                        button.btn partager son expérience
+                        button.btn voir les initiatives
+
+                    
+
