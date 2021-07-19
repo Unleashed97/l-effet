@@ -1,7 +1,17 @@
-extends ../layout/default.pug
+extends ../layout/main.pug
 
 block title
     Leffet
 
 block content
-    
+    section.section.section--intro
+        .container
+            .section__inner
+                .section__image-block
+                    include ../partials/header.pug
+                .section__text-block
+                    h1.section__header Une économie <mark>durable</mark> qui redonne localement. C’est ça
+                    button.btn En savoir plus
+                    img.logo__icon--round(src="/images/intro/logo-round.png", alt="Logo")
+                .section__slider.slider
+                    img.slider__image(src="/images/intro/slider.jpg")

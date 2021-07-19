@@ -43,7 +43,24 @@ a{
     margin: 0 auto;
 }
 
+// main content
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+// buttons
+.btn{
+    padding: 10 18px;
+    border: 2px solid $black;
+    border-radius: 20px;
+    font-family: 'RoadRadio';
+    font-size: 12px;
+    font-weight: 900;
+}
 // Components
 @import 'components/header';
 @import 'components/nav';
 @import 'components/search';
+@import 'components/section';
+@import 'components/slider';
