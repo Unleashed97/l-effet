@@ -14,4 +14,15 @@ block content
                     button.btn En savoir plus
                     img.logo__icon--round(src="/images/intro/logo-round.png", alt="Logo")
                 .section__slider.slider
-                    img.slider__image(src="/images/intro/slider.jpg")
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide 
+                                img.slider__image(src="/images/intro/slider.jpg")
+                            .swiper-slide 
+                                img.slider__image(src="/images/intro/slider.jpg")
+                            .swiper-slide 
+                                img.slider__image(src="/images/intro/slider.jpg")
+                        button.slider__button.slider__button--prev 
+                            <i class="far fa-chevron-left"></i>
+                        button.slider__button.slider__button--next 
+                            <i class="far fa-chevron-right"></i>

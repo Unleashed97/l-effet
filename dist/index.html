@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <Leffet></Leffet>
   </head>
@@ -36,12 +37,24 @@
                 <h1 class="section__header">Une économie <mark>durable</mark> qui redonne localement. C’est ça</h1>
                 <button class="btn">En savoir plus</button><img class="logo__icon--round" src="/images/intro/logo-round.png" alt="Logo">
               </div>
-              <div class="section__slider slider"><img class="slider__image" src="/images/intro/slider.jpg"></div>
+              <div class="section__slider slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img class="slider__image" src="/images/intro/slider.jpg"></div>
+                    <div class="swiper-slide"> <img class="slider__image" src="/images/intro/slider.jpg"></div>
+                    <div class="swiper-slide"> <img class="slider__image" src="/images/intro/slider.jpg"></div>
+                  </div>
+                  <button class="slider__button slider__button--prev">
+                     <i class="far fa-chevron-left"></i></button>
+                  <button class="slider__button slider__button--next">
+                     <i class="far fa-chevron-right"></i></button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-      </div>
-      <script src="js/script.min.js"> </script>
+      </div><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="js/script.min.js"></script>
     </div>
   </body>
 </html>
