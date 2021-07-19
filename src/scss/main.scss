@@ -35,10 +35,15 @@ a{
     font-size: 12px;
 }
 
+// container
+.container{
+    width: 100%;
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 // Components
-@import 'components/container';
 @import 'components/header';
 @import 'components/nav';
-@import 'components/section';
-@import 'components/footer';
+@import 'components/search';
