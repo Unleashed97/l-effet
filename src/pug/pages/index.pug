@@ -5,7 +5,7 @@ block title
 
 block content
     //- intro
-    section.section.section--intro
+    section.section.section--default.section__intro
         .container
             .section__inner
                 .section__image-block
@@ -15,7 +15,8 @@ block content
                     button.btn En savoir plus
                     img.logo__icon--round(src="/images/intro/logo-round.png", alt="Logo")
                 .section__slider.slider
-                    .swiper-container
+                    //- img.slider__image(src="/images/intro/slider.jpg", alt="Our team")
+                    .swiper-container.slider__container
                         .swiper-wrapper
                             .swiper-slide 
                                 img.slider__image(src="/images/intro/slider.jpg")
@@ -29,7 +30,7 @@ block content
                             <i class="far fa-chevron-right"></i>
 
     //- reviews
-    section.section.section--reviews-promo
+    section.section.section--reversed.section__reviews-promo
         .container
             .section__inner
                 .section__text-block 
@@ -40,7 +41,7 @@ block content
                     img(src="/images/reviews/bg.jpg", alt="Reviews promo")
 
     //- feedback
-    section.section.section--feedback
+    section.section.section--default.section__feedback
         .container 
             .section__inner 
                 .section__image-block 
@@ -52,5 +53,12 @@ block content
                         button.btn partager son expérience
                         button.btn voir les initiatives
 
-                    
-
+    //- about
+    section.section--reversed.section__about
+        .container 
+            .section__inner
+                .section__image-block
+                    img(src="/images/about/bg.png" alt="background")
+                .section__text-block
+                    img(src="/images/about/icon.png" alt="icon")
+                    p.section__text L'Effet COOP est une initiative conjointe du Conseil québécois de la coopération et de la mutualité et de ses membres. Contribuez à l'enrichissement collectif en encourageant les coopératives et les mutuelles du Québec.

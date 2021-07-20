@@ -1,30 +1,72 @@
 .section{
 
-    &--intro{
+    &--default{
+        .section__image-block{
+            order: 0;
+        }
+        .section__text-block{
+            order: 1;
+        }
+    }
+
+    &--reversed{
+        .section__image-block{
+            order: 1
+        }
+        .section__text-block{
+            order: 0;
+        }
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image-block{
+        width: 58%;
+    }
+
+    &__text-block{
+        display: flex;
+        flex-flow: column wrap;
+        
+        padding: 0 80px;
+        display: flex;
+        justify-content: center;
+        width: 42%;
+    }
+
+
+
+    &__intro{
         .section__inner{
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             height: 700px;
         }
+
         .section__image-block{
             flex: 0 0 100%;
             width: 58%;
             background: $blue url('/images/intro/bg.png') no-repeat;
             background-position: bottom;
+            order: initial;
         }
-    
         .section__text-block{
             flex: 0 0 46%;
             width: 42%;
             padding: 40px;
             position: relative;
-
+            order: initial;
+            justify-content: flex-start;
+        
             .btn{
                 position: absolute;
                 bottom: 40px;
             }
-
+        
             .logo__icon--round{
                 position: absolute;
                 top: 50%;
@@ -32,30 +74,61 @@
                 transform: translate3d(-50%, -50%, 0);
             }
         }
-    
         .section__slider{
             flex: 0 0 54%;
             width: 42%;
+            order: initial;
+            
         }
-
-        // .section__header{
-        //     margin-bottom: 100px;
-        // }
-
     }
 
-    &--reviews-promo{
-        .section__inner{
-            display: flex;
-            justify-content: center;
-        }
+    // &--intro{
+    //     .section__inner{
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         flex-direction: column;
+    //         height: 700px;
+    //     }
+    //     .section__image-block{
+    //         flex: 0 0 100%;
+    //         width: 58%;
+    //         background: $blue url('/images/intro/bg.png') no-repeat;
+    //         background-position: bottom;
+    //     }
+    
+    //     .section__text-block{
+    //         flex: 0 0 46%;
+    //         width: 42%;
+    //         padding: 40px;
+    //         position: relative;
 
+    //         .btn{
+    //             position: absolute;
+    //             bottom: 40px;
+    //         }
+
+    //         .logo__icon--round{
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             transform: translate3d(-50%, -50%, 0);
+    //         }
+    //     }
+    
+    //     .section__slider{
+    //         flex: 0 0 54%;
+    //         width: 42%;
+    //     }
+
+    //     // .section__header{
+    //     //     margin-bottom: 100px;
+    //     // }
+
+    // }
+
+    &__reviews-promo{
         .section__text-block{
             width: 41%;
-            padding: 0 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
 
         .section__image-block{
@@ -73,30 +146,41 @@
         }
     }
 
-    &--feedback{
+    &__feedback{
         .section__inner{
             background-color: $yellow;
-            display: flex;
-            justify-content: center;
             height: 500px;
         }
 
         .section__image-block{
-            width: 58%;
             display: flex;
             align-items: flex-end;
         }
         
         .section__text-block{
-            width: 42%;
-            padding: 0 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
             .btn + .btn {
                 margin-left: 15px;
             }
+        }
+    }
+
+    &__about{
+        .section__inner{
+            background-color: $blue;
+            height: 600px;
+        }
+        .section__text{
+            font-size: 24px;
+            line-height: 28px;
+            img{
+                min-width: none;
+            }
+        }
+
+        .section__image-block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
