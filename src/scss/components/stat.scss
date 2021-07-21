@@ -1,0 +1,41 @@
+.stat{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        width: 427px;
+        height: 305px;
+        padding: 40px;
+        margin: 60px 0;
+        border-radius: 10px;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+
+
+        &:nth-child(1){
+            background-color: $yellow;
+        }
+        &:nth-child(2){
+            background-color: $green;
+        }
+        &:nth-child(3){
+            background-color: $cyan;
+        }
+        &--big{
+            height: 346px;
+        }
+    }
+
+    &__item-image{
+        margin-bottom: 30px;
+    }
+
+    &__item-text{
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
