@@ -1,0 +1,44 @@
+.footer{
+    padding: 40px;
+
+    &__inner{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image-block{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 42%;
+
+    }
+
+    &__text-block{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__col{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        margin-right: 40px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__col-title{
+        font-family: 'RoadRadio';
+        font-size: 12px;
+        font-weight: 900;
+        margin-bottom: 8px;
+        white-space: nowrap;
+    }
+    &__copy{
+        text-align: center;
+        font-size: 12px;
+    }
+}
