@@ -38,8 +38,6 @@
         width: 42%;
     }
 
-
-
     &__intro{
         .section__inner{
             display: flex;
@@ -83,50 +81,6 @@
         }
     }
 
-    // &--intro{
-    //     .section__inner{
-    //         display: flex;
-    //         flex-wrap: wrap;
-    //         flex-direction: column;
-    //         height: 700px;
-    //     }
-    //     .section__image-block{
-    //         flex: 0 0 100%;
-    //         width: 58%;
-    //         background: $blue url('/images/intro/bg.png') no-repeat;
-    //         background-position: bottom;
-    //     }
-    
-    //     .section__text-block{
-    //         flex: 0 0 46%;
-    //         width: 42%;
-    //         padding: 40px;
-    //         position: relative;
-
-    //         .btn{
-    //             position: absolute;
-    //             bottom: 40px;
-    //         }
-
-    //         .logo__icon--round{
-    //             position: absolute;
-    //             top: 50%;
-    //             left: 50%;
-    //             transform: translate3d(-50%, -50%, 0);
-    //         }
-    //     }
-    
-    //     .section__slider{
-    //         flex: 0 0 54%;
-    //         width: 42%;
-    //     }
-
-    //     // .section__header{
-    //     //     margin-bottom: 100px;
-    //     // }
-
-    // }
-
     &__reviews-promo{
         .section__text-block{
             width: 41%;
@@ -165,7 +119,7 @@
         }
     }
 
-    &__about{
+    &__about-promo{
         .section__inner{
             background-color: $blue;
             height: 600px;
@@ -179,6 +133,43 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    &__about{
+        .section__inner{
+            background-color: $green;
+            height: 377px;
+        }
+
+        .section__image-block{
+            background: url('/images/about/bg.png') no-repeat bottom; 
+        }
+    }
+
+    &__about-slider{
+        .section__inner{
+            padding: 100px 85px;
+        }
+
+        .section__text-block{
+            padding: 0;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            position: relative;
+
+            img{
+                position: absolute;
+                top: 15%;
+                left: 20%;
+                // transform: translate3d(-50%, -50%, 0);
+            }
+
+        }
+
+        .section__image-block{
+            display: flex;
+            justify-content: flex-end;
         }
     }
 
