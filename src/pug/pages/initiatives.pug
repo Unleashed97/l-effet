@@ -1,0 +1,91 @@
+extends ../layout/default.pug
+
+block title 
+    Initiatives
+
+block content 
+    //- intro
+    .section.section__initiatives-intro.section--reversed.section--intro
+        .container 
+            .section__inner 
+                .section__text-block 
+                    h1.section__title Initiatives
+                    p.section__text Découvrez comment les coopératives et les mutuelles soutiennent leur communauté et s’impliquent pour contribuer à la relance économique du Québec.
+                .section__image-block
+    .card
+        .container 
+            .card__wrapper 
+                .card__list
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/1.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Au mois d'avril, les libraires étaient inquiets pour leur avenir
+                            p.card__item-text Les membres de la coopérative des Librairies indépendantes du Québec ont bénéficié de l’engouement récent pour l’achat local.
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/2.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Le Réseau des coopératives funéraires a fait l'acquisition de McDonald Funeral Home LTD en Ontario
+                            p.card__item-text Le Réseau des coopératives funéraires totalisent près de 250000 membres et desservent plus de 13 000 familles chaque année.
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/3.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Co-operators annonce une contribution de 200000$ à Centraide
+                            p.card__item-text Le Groupe Co-operators Assurance et services financiers a offert une contribution de 200000$ pour venir en aide aux Canadiens...
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/4.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title L’application de transport de personnes Eva s’est adaptée à la crise sanitaire en offrant un service de livraison instantanée.
+                            p.card__item-text Eva veut faire un pied de nez à Amazon et Uber Eats.
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/5.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Desjardins et La Ruche: Du coeur à l'achat
+                            p.card__item-text La Ruche permet aux campagnes admissibles au programme Du cœur à l’achat, encouragé par Desjardins d’opérer sous...
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/6.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title 1200 couturières se mobilisent pour produire du matériel médical en temps de pandémie
+                            p.card__item-text En temps de pandémie, 1200 couturières amateurs et professionnelles se sont portées volontaires pour fabriquer des accessoires médicaux.
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/7.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Desjardins : Stratégie de 160M$ pour contribuer à la relance économique
+                            p.card__item-text Avec la reprise des activités, le Mouvement Desjardins a déployé sa stratégie pour contribuer à la relance et met de l'avant plusieurs initiatives...
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/8.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Desjardins donne 40000$ pour les CHSLD de la région
+                            p.card__item-text Les caisses Desjardins du Saguenay-Lac-Saint-Jean font un don de 40000$ aux six fondations des hôpitaux de la région pour des achats d'items...
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/9.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Promutuel Assurance du Lac au Fleuve a investi 10000$ pour l’économie locale
+                            p.card__item-text Avec l’objectif d’être toujours présent et actif dans son milieu, Promutuel Assurance du Lac au Fleuve a acheté plusieurs paniers...
+                            button.btn en savoir plus
+                    .card__item
+                        img.card__item-image(src="images/initiatives/cards/10.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Sollio Groupe Coopératif a lancé «De nous à vous»
+                            p.card__item-text Sollio Groupe Coopératif et seize coopératives agricoles de son réseau ont lancé l'initiative «De nous à vous» pour venir en aide...
+                            button.btn en savoir plus
+                button.btn.card__load-more page suivante
+    //- feedback
+    section.section.section--default.section__feedback
+        .container 
+            .section__inner 
+                .section__image-block 
+                    img(src="images/feedback/feedback-blue.png", alt="Feedback")
+                .section__text-block 
+                    h1.section__title Partagez votre expérience à saveur coopérative
+                    p.section__text Vous avez une initiative qui contribue aux valeurs coopératives? Partagez-là avec nous en nous envoyant les informations par courriel.
+                    .section__button-wrapper
+                        button.btn partager son expérience
+                        button.btn voir les initiatives

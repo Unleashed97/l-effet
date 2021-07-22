@@ -1,5 +1,4 @@
 .section{
-
     &--default{
         .section__image-block{
             order: 0;
@@ -22,6 +21,7 @@
         .section__inner{
             position: relative;
             padding-top: 100px;
+            height: 358px;
         }
     }
 
@@ -56,11 +56,11 @@
         .section__image-block{
             flex: 0 0 100%;
             width: 58%;
-            background: $blue url('/images/intro/bg.png') no-repeat;
+            background: $blue url('../images/intro/bg.png') no-repeat;
             background-position: bottom;
             order: initial;
             position: relative;
-            
+
         }
         .section__text-block{
             flex: 0 0 46%;
@@ -152,7 +152,7 @@
         }
 
         .section__image-block{
-            background: url('/images/about/bg.png') no-repeat bottom; 
+            background: url('../images/about/bg.png') no-repeat bottom; 
         }
     }
 
@@ -188,7 +188,16 @@
             height: 500px;
         }
         .section__image-block{
-            background: url('/images/join-us/bg.jpg');
+            background: url('../images/join-us/bg.jpg');
+        }
+    }
+
+    &__initiatives-intro{
+        .section__inner{
+            background-color: $blue;
+        }
+        .section__image-block{
+            background: url('../images/initiatives/intro.png') no-repeat bottom;
         }
     }
 
