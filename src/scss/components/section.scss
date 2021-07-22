@@ -18,6 +18,13 @@
         }
     }
 
+    &--intro{
+        .section__inner{
+            position: relative;
+            padding-top: 100px;
+        }
+    }
+
     &__inner{
         display: flex;
         justify-content: center;
@@ -52,6 +59,8 @@
             background: $blue url('/images/intro/bg.png') no-repeat;
             background-position: bottom;
             order: initial;
+            position: relative;
+            
         }
         .section__text-block{
             flex: 0 0 46%;
