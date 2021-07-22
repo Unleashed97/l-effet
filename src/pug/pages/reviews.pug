@@ -1,0 +1,93 @@
+extends ../layout/default.pug
+
+block title 
+    Temoignages
+
+block content 
+    //- intro
+    .section.section__reviews-intro.section--reversed.section--intro
+        .container 
+            .section__inner 
+                .section__text-block 
+                    h1.section__title Témoignages
+                    p.section__text Vous êtes une coopérative et vous désirez promouvoir l’Effet Coop? Téléchargez les outils ci-dessous, incluant des pastilles, des publicités pour les réseaux sociaux et bien plus!
+                .section__image-block 
+    //- cards reviews
+    .card
+        .container 
+            .card__wrapper 
+                .card__list
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/1.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Une scierie cherchait à optimiser sa production
+                            p.card__item-text La structure coopérative et l'implication de son conseil d'administration, de ses membres et de ses employés a été la clé du succès.
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/2.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Desjardins appuie la relance socioéconomique de toutes les régions du Québec
+                            p.card__item-text Le modèle coopératif, avec ses valeurs d’entraide, de solidarité et d’engagement est plus pertinent que jamais.
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/3.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Une coopérative forestière souhaitait revaloriser les sapins de Noël
+                            p.card__item-text L'extraction des huiles essentielles est devenue une activité qui a mobilisé la communauté.
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/4.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Les coopératives agroalimentaires souhaitaient faire la différence en temps de pandémie
+                            p.card__item-text Dans le but de soutenir les concitoyens durant la pandémie, 17 coopératives agricoles se sont mobilisées pour réaliser une campagne d’entraide.
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/5.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Une directrice pour les coopératives forestières du Québec
+                            p.card__item-text Mme Annie Beaupré a récemment été nommée directrice générale de la Fédération québécoise des coopératives forestières (FQCF).
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/6.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Des étudiants en musique se regroupent pour répondre à une demande importante
+                            p.card__item-text Créer une coopérative qui répond à une forte demande de la part des organisations souhaitant offrir une prestation lors d'événement.
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/7.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Cinq entrepreneurs spécialisés souhaitaient faire rayonner davantage la culture au Québec.
+                            p.card__item-text La coopérative Culture Cible a réuni cinq grands diffuseurs culturels pour faire rayonner la culture au Québec.
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/8.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Aider le secteur coopératif à réagir, à innover et à prospérer dans une nouvelle réalité, tel était le pari de Co-operators.
+                            p.card__item-text Co-operators souhaitait offrir du financement pour faire face à l'économie changeante.
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/9.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Les coopératives forestières souhaitaient réduire les gaz à effet de serre générés par les résidus forestiers.
+                            p.card__item-text Revaloriser les écorces, les copeaux, la sciure et autres résidus de bois de sciage et de récolte pour chauffer des bâtiments, une solution viable?
+                            button.btn lire le témoignage
+                    .card__item
+                        img.card__item-image(src="images/reviews/cards/10.jpg", alt="")
+                        .card__item-text-block 
+                            h2.card__item-title Le bureau de poste était fermé depuis longtemps, l’école primaire était devenue précaire.
+                            p.card__item-text En 2007, les citoyens de Saint-Luc ont assisté à la fermeture de l’épicerie et du garage avec sa station-service.
+                            button.btn lire le témoignage
+                button.btn.card__load-more page suivante
+
+    //- feedback
+    section.section.section--default.section__feedback
+        .container 
+            .section__inner 
+                .section__image-block 
+                    img(src="images/feedback/feedback-red.png", alt="Feedback")
+                .section__text-block 
+                    h1.section__title Partagez votre expérience à saveur coopérative
+                    p.section__text Vous avez une initiative qui contribue aux valeurs coopératives? Partagez-là avec nous en nous envoyant les informations par courriel.
+                    .section__button-wrapper
+                        button.btn partager son expérience
+                        button.btn voir les initiatives
