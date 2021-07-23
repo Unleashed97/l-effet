@@ -215,6 +215,20 @@
         }
     }
 
+    &__podcasts-intro{
+        .section__inner{
+            background-color: $red;
+        }
+
+        .section__text{
+            margin-bottom: 20px;
+        }
+
+        .section__image-block{
+            background: url('../images/podcasts/intro.png') no-repeat bottom;
+        }
+    }
+
     &__title{
         font-family: 'Athletics';
         font-size: 35px;

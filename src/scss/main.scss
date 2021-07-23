@@ -47,6 +47,11 @@ a{
     & + .btn{
         margin-top: 5px;
     }
+
+    &--plain{
+        border: 0;
+        padding: 0;
+    }
 }
 
 // container
@@ -73,3 +78,6 @@ a{
 @import 'components/socials';
 @import 'components/stat';
 @import 'components/card';
+@import 'components/podcasts';
+@import 'components/player';
+@import 'components/podcasts-services';
